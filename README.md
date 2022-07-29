@@ -27,7 +27,7 @@ ___
 
 * Скачать код проекта с [репозитория](https://github.com/DenDro163/AQADiplomaProject.git)
 * Запустить Docker Desktop.
-* Открыть терминал в папке с проектом.
+* Открыть терминал в папке с проектом (Использовался Git Bash). 
 * Выполнить: 
   `docker-compose up -d --force-recreate`
 * Запустить SUT aqa-shop.jar командой:
@@ -40,6 +40,6 @@ ___
 ### По умолчанию подключается MySQL.
 ### Для работы с PostgreSQL:
 * перезапустить SUT aqa-shop.jar командой: 
-  `java -jar artifacts\aqa-shop.jar --spring.datasource.url=jdbc:postgresql://localhost:5432/app &`
+  `java -jar artifacts/aqa-shop.jar --spring.datasource.url=jdbc:postgresql://localhost:5432/app &`
 * Запустить авто тесты командой:
   `./gradlew clean test -DdataBase.url=jdbc:postgresql://localhost:5432/app -Dusername=app -Dpassword=pass --info`

@@ -123,7 +123,7 @@ public class SQLHelperPayment {
 
             try (var rs = dataStmt.executeQuery(query)) {
                 rs.next();
-                return rs.getString("created").substring(0, 16);
+                return rs.getString("created").substring(0, 15);
             }
         }
     }
@@ -136,7 +136,7 @@ public class SQLHelperPayment {
         ) {
             try (var rs = dataStmt.executeQuery(query)) {
                 rs.next();
-                return rs.getString("created").substring(0, 16);
+                return rs.getString("created").substring(0, 15);
             }
         }
     }
@@ -201,7 +201,7 @@ public class SQLHelperPayment {
         ) {
             try (var rs = dataStmt.executeQuery(query)) {
                 rs.next();
-                return rs.getString("created").substring(0, 16);
+                return rs.getString("created").substring(0, 15);
             }
         }
     }
