@@ -10,13 +10,15 @@ ___
 ### Статистика Успешных\ проваленных тест кейсов.
 ___
 #### При подключении к БД MySQL.
-![](../../Users/dendr/AppData/Roaming/QipShot/screenshots/Screenshot_378.png)
+
+![Screenshot_378](https://user-images.githubusercontent.com/95339581/181752563-d0bad8af-92a5-40e4-ab0b-81bfb78298d3.png)
 
 * Успешных тест кейсов 55,55% (30 тест кейсов).
 * Проваленных тест кейсов 44,45% (24 тест кейсов).
 
 #### При подключении к БД PostgreSQL.
-![](../../Users/dendr/AppData/Roaming/QipShot/screenshots/Screenshot_382.png)
+
+![Screenshot_382](https://user-images.githubusercontent.com/95339581/181752663-44b13d7e-37d4-4da8-a6f6-6b857b09fd41.png)
 
 * Успешных тест кейсов 55,55% (30 тест кейсов).
 * Проваленных тест кейсов 44,45% (24 тест кейсов).
@@ -24,15 +26,17 @@ ___
 
 #### Тестирование веб- интерфейса покупки тура по карте.
 ___
-![](../../Users/dendr/AppData/Roaming/QipShot/screenshots/Screenshot_379.png)
+![Screenshot_379](https://user-images.githubusercontent.com/95339581/181752695-06c29958-843e-4838-954a-34757b0d8e47.png)
 
 #### Тестирование веб- интерфейса покупки тура в кредит по карте.
 ___
-![](../../Users/dendr/AppData/Roaming/QipShot/screenshots/Screenshot_380.png)
+
+![Screenshot_380](https://user-images.githubusercontent.com/95339581/181752727-4fc0c8b7-95cb-4805-b293-ca44de67033c.png)
 
 #### API тесты.
 ___
-![](../../Users/dendr/AppData/Roaming/QipShot/screenshots/Screenshot_381.png)
+
+![Screenshot_381](https://user-images.githubusercontent.com/95339581/181752760-a878b61f-101e-44cd-947a-bed1552a064d.png)
 
 ### Общие рекомендации.
 ___
