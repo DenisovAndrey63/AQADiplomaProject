@@ -8,7 +8,9 @@ ___
 [План тестирования](https://github.com/DenDro163/AQADiplomaProject/blob/master/docs/Plan.md)
 ___
 ## Итоги тестирования.
+[Отчет о проведенном тестировании](https://github.com/DenDro163/AQADiplomaProject/blob/master/docs/Report.md)
 
+[Отчет о проведенной автоматизации](https://github.com/DenDro163/AQADiplomaProject/blob/master/docs/Summery.md)
 ___
 ## Процедура запуска авто-тестов.
 
