@@ -1,6 +1,5 @@
 
 # AQADiplomaProject
-[![Build status](https://ci.appveyor.com/api/projects/status/lj5rmw5slet0jy2q?svg=true)](https://ci.appveyor.com/project/DenDro163/aqadiplomaproject)
 ___
 ## Документация.
 
