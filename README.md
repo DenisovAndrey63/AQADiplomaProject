@@ -10,7 +10,7 @@ ___
 ## Итоги тестирования.
 [Отчет о проведенном тестировании](https://github.com/DenDro163/AQADiplomaProject/blob/master/docs/Report.md)
 
-[Отчет о проведенной автоматизации](https://github.com/DenDro163/AQADiplomaProject/blob/master/docs/Summery.md)
+[Отчет о проведенной автоматизации](https://github.com/DenDro163/AQADiplomaProject/blob/master/docs/Summary.md)
 ___
 ## Процедура запуска авто-тестов.
 
