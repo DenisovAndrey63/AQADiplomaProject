@@ -10,8 +10,10 @@ branches:
 build: off  # будем использовать свой скрипт сборки
 
 install:
-  # Устанавливаем OpenJDK 11 вручную
-  - sudo apt-get update
+  # Игнорируем ошибку репозитория Google Chrome
+  - sudo apt-get update -o Acquire::Check-Valid-Until=false
+
+  # Устанавливаем OpenJDK 11
   - sudo apt-get install -y openjdk-11-jdk
   - java -version  # Проверяем версию JDK
 
