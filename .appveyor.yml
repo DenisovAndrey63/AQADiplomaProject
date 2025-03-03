@@ -21,7 +21,7 @@ install:
   - docker ps
   - sleep 15
   # запускаем SUT (& означает, что в фоновом режиме - не блокируем терминал для запуска тестов);
-  - java -jar artifacts\aqa-shop.jar &
+  - java -jar artifacts/aqa-shop.jar &
   # +x добавить права на (execute) выполнение файла (chmod (от англ. change mode) — команда для изменения прав доступа к файлам и каталогам, используемая в Unix-подобных операционных системах)
   - chmod +x gradlew
 
