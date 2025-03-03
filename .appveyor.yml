@@ -1,6 +1,6 @@
 image: Ubuntu  # образ для сборки
 
-stack: jdk11  # версия JDK (строка)
+stack: openjdk11  # версия JDK (строка)
 
 services:
   - docker
