@@ -33,7 +33,7 @@ ___
 * Выполнить: 
   `docker-compose up -d --force-recreate`
 * Запустить SUT aqa-shop.jar командой:
-  `java -jar artifacts\aqa-shop.jar &`
+  `java -jar artifacts/aqa-shop.jar &`
 * Запустить авто тесты командой:  
   `./gradlew clean test --info`
 * Создать отчёты Allure и открыть в браузере:

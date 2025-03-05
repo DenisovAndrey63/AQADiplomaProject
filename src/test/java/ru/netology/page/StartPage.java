@@ -17,7 +17,7 @@ public class StartPage {
 
     public StartPage() {
         headerStart.shouldBe(visible);
-    }//Проверяем видимость стартовой страницы
+    }//Проверяем видимость стартовой страницы через этот конструктор
 
     public PaymentPage payment() {//Жмем кнопку купить на стартовой
         payButton.click();

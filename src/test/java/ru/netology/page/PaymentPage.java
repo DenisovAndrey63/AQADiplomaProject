@@ -15,13 +15,13 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class PaymentPage {
-    //CSS-селекторы для элементов  страницы для покупки тура по дебетовой карте
+    //CSS-селекторы для элементов страницы для покупки тура по дебетовой карте
 // Хедер страницы Оплата по карте и кнопка купить.
-    private SelenideElement payHeader = $(withText("Оплата по карте"));
+    private SelenideElement payHeader = $(withText("Оплата по карте"));// Проверяю наличие хедера
 
 
-    //Форма для ввода данных о оплате.
-    private SelenideElement paymentHeader = $("[class='form form_size_m form_theme_alfa-on-white']");
+    //Форма для ввода данных об оплате.
+    private SelenideElement paymentHeader = $("[class='form form_size_m form_theme_alfa-on-white']");// Проверяю наличие формы для заполнения
 
     //Параметры карты.
     private SelenideElement cardNumberField = $("[placeholder= '0000 0000 0000 0000']");
@@ -39,9 +39,9 @@ public class PaymentPage {
 
     public PaymentPage() {
         paymentHeader.shouldBe(visible);
-    }
+    }// Конструктор, проверяем наличие формы оплаты.
 
-    //Сообщение о успешной или неуспешной регистрации.
+    //Сообщение об успешной или неуспешной регистрации.
     public void paymentSuccessfulNotification() {
         succeedNotification.shouldHave(text("Успешно Операция одобрена Банком."), Duration.ofSeconds(15)).shouldBe(visible);
     }
