@@ -50,7 +50,7 @@ public class PaymentPage {
         failedNotification.shouldHave(text("Ошибка! Банк отказал в проведении операции."), Duration.ofSeconds(15)).shouldBe(visible);
     }
 
-    public void getInsertCardData(CardData cardData) {// Метод для заполнения данных карты
+    public void getInsertCardData(CardData cardData) {// Метод для заполнения данных карты и нажатие кнопки продолжить
         cardNumberField.setValue(cardData.getNumber());
         cardMonthField.setValue(cardData.getMonth());
         cardYearField.setValue(cardData.getYear());

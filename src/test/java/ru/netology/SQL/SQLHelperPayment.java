@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class SQLHelperPayment {
 
     @SneakyThrows
-    private static Connection connection() {
+    private static Connection connection() {// Соединение с БД, используя системные параметры из билда Грэдл
         return DriverManager.getConnection
                 (System.getProperty("dataBase.url"),
                         System.getProperty("username"),
@@ -20,7 +20,7 @@ public class SQLHelperPayment {
 
 
     @SneakyThrows
-    public static void dropTables() {
+    public static void dropTables() {// Удаляем данные из таблицы
         try (
                 var dataStmt = connection().createStatement();//Создаем абстракцию выполнения запроса
         ) {
@@ -32,7 +32,7 @@ public class SQLHelperPayment {
             dataStmt.executeUpdate(dropTable);
             System.out.println("Data deleted in Data Base tables...");
         } catch (SQLException e) {
-            e.printStackTrace();
+            e.printStackTrace();// Если будет исключение, то получим сообщение в консоли с помощью этого метода
         }
     }
 

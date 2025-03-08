@@ -45,8 +45,8 @@ public class PaymentTest {
         var startPage = new StartPage();//Создаем стартовую страницу
         var paymentPage = startPage.payment();//Жмем на кнопку купить на стартовой
         CardData card = new CardData(getApprovedCardNumber(), generateMonth(1), generateYear(1), generateCardOwnerName(), getRandomCVC());// Создаем карту с данными
-        paymentPage.getInsertCardData(card);//Заполняем поля данными карты
-        paymentPage.paymentSuccessfulNotification();
+        paymentPage.getInsertCardData(card);//Заполняем поля данными карты и жмем продолжить
+        paymentPage.paymentSuccessfulNotification();//Проверка сообщения "Успешно Операция одобрена Банком"
         assertEquals("APPROVED", SQLHelperPayment.getCardStatusApproved());
     }
 
@@ -123,7 +123,7 @@ public class PaymentTest {
     }
 
     @Test
-    @DisplayName("1.9. Неккоректный номер месяца '1 знак'")
+    @DisplayName("1.9. Некорректный номер месяца '1 знак'")
     public void oneNumberMonthPayTest() {
         var startPage = new StartPage();
         var paymentPage = startPage.payment();
@@ -133,7 +133,7 @@ public class PaymentTest {
     }
 
     @Test
-    @DisplayName("1.10. Неккоректный номер месяца '2 ноля'")
+    @DisplayName("1.10. Некорректный номер месяца '2 ноля'")
     public void twoZeroNumberMonthPayTest() {//баг
         var startPage = new StartPage();
         var paymentPage = startPage.payment();
@@ -143,7 +143,7 @@ public class PaymentTest {
     }
 
     @Test
-    @DisplayName("1.11. Неккоректный номер месяца 'больше 12'")
+    @DisplayName("1.11. Некорректный номер месяца 'больше 12'")
     public void moreThanTwelveNumberMonthPayTest() {
         var startPage = new StartPage();
         var paymentPage = startPage.payment();
@@ -153,7 +153,7 @@ public class PaymentTest {
     }
 
     @Test
-    @DisplayName("1.12. Неккоректный номер месяца 'прошлый месяц'")
+    @DisplayName("1.12. Некорректный номер месяца 'прошлый месяц'")
     public void lastMonthPayTest() {
         var startPage = new StartPage();
         var paymentPage = startPage.payment();
@@ -203,7 +203,7 @@ public class PaymentTest {
     }
 
     @Test
-    @DisplayName("1.17. Неккоректный номер года 'Более 6 лет от текущего'.")
+    @DisplayName("1.17. Некорректный номер года 'Более 6 лет от текущего'.")
     public void farFutureYearPayTest() {
         var startPage = new StartPage();
         var paymentPage = startPage.payment();
@@ -223,7 +223,7 @@ public class PaymentTest {
     }
 
     @Test
-    @DisplayName("1.19.1. Неккоректное имя владельца '1 слово на английском'.")
+    @DisplayName("1.19.1. Некорректное имя владельца '1 слово на английском'.")
     public void oneNameEngCardOwnerPayTest() {//Баг
         var startPage = new StartPage();
         var paymentPage = startPage.payment();
@@ -233,7 +233,7 @@ public class PaymentTest {
     }
 
     @Test
-    @DisplayName("1.19.2. Неккоректное имя владельца '1 слово на русском'.")
+    @DisplayName("1.19.2. Некорректное имя владельца '1 слово на русском'.")
     public void oneNameRusCardOwnerPayTest() {//Баг
         var startPage = new StartPage();
         var paymentPage = startPage.payment();
@@ -243,7 +243,7 @@ public class PaymentTest {
     }
 
     @Test
-    @DisplayName("1.19.3. Неккоректное имя владельца '2 слова на русском'.")
+    @DisplayName("1.19.3. Некорректное имя владельца '2 слова на русском'.")
     public void FullNameRusCardOwnerPayTest() {//Баг
         var startPage = new StartPage();
         var paymentPage = startPage.payment();
@@ -263,7 +263,7 @@ public class PaymentTest {
     }
 
     @Test
-    @DisplayName("1.21. Неккоректный номер CVC/CVV '2 цифры'.")
+    @DisplayName("1.21. Некорректный номер CVC/CVV '2 цифры'.")
     public void wrongCVCPayTest() {
         var startPage = new StartPage();
         var paymentPage = startPage.payment();
@@ -273,7 +273,7 @@ public class PaymentTest {
     }
 
     @Test
-    @DisplayName("1.22. Неккоректный номер CVC/CVV 'Три ноля'.")
+    @DisplayName("1.22. Некорректный номер CVC/CVV 'Три ноля'.")
     public void tripleZeroCVCPayTest() {//баг
         var startPage = new StartPage();
         var paymentPage = startPage.payment();

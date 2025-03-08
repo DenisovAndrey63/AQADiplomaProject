@@ -39,17 +39,17 @@ public class APITest {
 
 
     @Test
-    @DisplayName("3.1.")
-    void paymentApprovedCardAPI() {
+    @DisplayName("3.1. POST запрос с данными одобренной дебетовой карты")
+    void paymentApprovedCardAPI() {//Получает объект, представляющий валидную карту, которая должна быть одобрена при оплате.
         SQLHelperPayment.dropTables(); // Удаляет старые данные перед тестом
-        val validApprovedCard = getApprovedCard();
-        val status = queryForm(validApprovedCard, "/api/v1/pay", 200);
-        SQLHelperPayment.checkSuccessPayByCard();
+        val validApprovedCard = getApprovedCard();// Из Датагенератора берем валидную карту
+        val status = queryForm(validApprovedCard, "/api/v1/pay", 200);//Отправляет POST запрос формой из АПИхелпера с данными валидной карты и ожидаем ответ 200 от сервера
+        SQLHelperPayment.checkSuccessPayByCard();//Вызывает метод, который проверяет, что оплата была успешно проведена в базе данных
     }
 
 
     @Test
-    @DisplayName("3.2.")
+    @DisplayName("3.2. POST запрос с данными отклоненной дебетовой карты")
     void paymentDeclinedCardAPI() {
         SQLHelperPayment.dropTables(); // Удаляет старые данные перед тестом
         val validDeclinedCard = getDeclinedCard();
@@ -59,7 +59,7 @@ public class APITest {
     }
 
     @Test
-    @DisplayName("3.3.")
+    @DisplayName("3.3. POST запрос с данными одобренной кредитной карты")
     void creditApprovedCardAPI() {// баг с credit id
         SQLHelperPayment.dropTables(); // Удаляет старые данные перед тестом
         val validApprovedCard = getApprovedCard();
@@ -69,7 +69,7 @@ public class APITest {
 
 
     @Test
-    @DisplayName("3.4.")
+    @DisplayName("3.4. POST запрос с данными отклоненной кредитной карты")
     void creditDeclinedCardAPI() {// баг
         SQLHelperPayment.dropTables(); // Удаляет старые данные перед тестом
         val validDeclinedCard = getDeclinedCard();
@@ -78,14 +78,14 @@ public class APITest {
     }
 
     @Test
-    @DisplayName("3.5.")
+    @DisplayName("3.5. POST запрос с данными дебетовой карты другого банка")
     void paymentOtherCardAPI() {//Баг, статус ответа 500
         val otherBankCardPay = getOtherCard();
         val status = queryForm(otherBankCardPay, "/api/v1/pay", 400);
     }
 
     @Test
-    @DisplayName("3.6.")
+    @DisplayName("3.6. POST запрос с данными кредитной карты другого банка")
     void creditOtherCardAPI() {//Баг, статус ответа 500
         val otherBankCardCredit = getOtherCard();
         val status = queryForm(otherBankCardCredit, "/api/v1/credit", 400);

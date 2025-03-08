@@ -119,7 +119,7 @@ public class CreditTest {
 
 
     @Test
-    @DisplayName("2.9. Неккоректный номер месяца '1 знак'")
+    @DisplayName("2.9. Некорректный номер месяца '1 знак'")
     public void oneNumberMonthCreditTest() {
         var startPage = new StartPage();
         var creditPage = startPage.creditPay();
@@ -129,7 +129,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName("2.10. Неккоректный номер месяца '2 ноля'")
+    @DisplayName("2.10. Некорректный номер месяца '2 ноля'")
     public void twoZeroNumberMonthCreditTest() {//баг
         var startPage = new StartPage();
         var creditPage = startPage.creditPay();
@@ -139,7 +139,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName("2.11. Неккоректный номер месяца 'больше 12'")
+    @DisplayName("2.11. Некорректный номер месяца 'больше 12'")
     public void moreThanTwelveNumberMonthCreditTest() {
         var startPage = new StartPage();
         var creditPage = startPage.creditPay();
@@ -149,7 +149,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName("2.12. Неккоректный номер месяца 'прошлый месяц'")
+    @DisplayName("2.12. Некорректный номер месяца 'прошлый месяц'")
     public void lastMonthPayTest() {
         var startPage = new StartPage();
         var creditPage = startPage.creditPay();
@@ -169,7 +169,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName("2.14. Неккоректный номер года 'Ноль'.")
+    @DisplayName("2.14. Некорректный номер года 'Ноль'.")
     public void zeroYearCreditTest() {
         var startPage = new StartPage();
         var creditPage = startPage.creditPay();
@@ -179,7 +179,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName("2.15. Неккоректный номер года '2 ноля'.")
+    @DisplayName("2.15. Некорректный номер года '2 ноля'.")
     public void twoZeroYearCreditTest() {
         var startPage = new StartPage();
         var creditPage = startPage.creditPay();
@@ -189,7 +189,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName("2.16. Неккоректный номер года 'Прошлый год'.")
+    @DisplayName("2.16. Некорректный номер года 'Прошлый год'.")
     public void lastYearCreditTest() {
         var startPage = new StartPage();
         var creditPage = startPage.creditPay();
@@ -199,7 +199,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName("2.17. Неккоректный номер года 'Более 6 лет от текущего'.")
+    @DisplayName("2.17. Некорректный номер года 'Более 6 лет от текущего'.")
     public void farFutureYearCreditTest() {
         var startPage = new StartPage();
         var creditPage = startPage.creditPay();
@@ -221,7 +221,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName("2.19.1. Неккоректное имя владельца '1 слово на английском'.")
+    @DisplayName("2.19.1. Некорректное имя владельца '1 слово на английском'.")
     public void oneNameEngCardOwnerCreditTest() {//Баг
         var startPage = new StartPage();
         var creditPage = startPage.creditPay();
@@ -231,7 +231,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName("2.19.2. Неккоректное имя владельца '1 слово на русском'.")
+    @DisplayName("2.19.2. Некорректное имя владельца '1 слово на русском'.")
     public void oneNameRusCardOwnerCreditTest() {//Баг
         var startPage = new StartPage();
         var creditPage = startPage.creditPay();
@@ -241,7 +241,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName("2.19.3. Неккоректное имя владельца '2 слова на русском'.")
+    @DisplayName("2.19.3. Некорректное имя владельца '2 слова на русском'.")
     public void FullNameRusCardOwnerCreditTest() {//Баг
         var startPage = new StartPage();
         var creditPage = startPage.creditPay();
@@ -261,7 +261,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName("2.21. Неккоректный номер CVC/CVV '2 цифры'.")
+    @DisplayName("2.21. Некорректный номер CVC/CVV '2 цифры'.")
     public void wrongCVCTest() {
         var startPage = new StartPage();
         var creditPage = startPage.creditPay();
@@ -271,7 +271,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName("2.22. Неккоректный номер CVC/CVV 'Три ноля'.")
+    @DisplayName("2.22. Некорректный номер CVC/CVV 'Три ноля'.")
     public void tripleZeroCVCTest() {//баг
         var startPage = new StartPage();
         var creditPage = startPage.creditPay();

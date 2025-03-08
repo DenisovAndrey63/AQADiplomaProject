@@ -1,33 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.netology.test.PaymentTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-03-04T19:34:19" hostname="DESKTOP-8BAUQUV" time="19.772">
+<testsuite name="ru.netology.test.PaymentTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-07T09:50:39" hostname="DESKTOP-8BAUQUV" time="7.049">
   <properties/>
-  <testcase name="1.13. Пустое поле 'Год'." classname="ru.netology.test.PaymentTest" time="19.772">
-    <failure message="Element should have text &quot;Поле обязательно для заполнения&quot; {.input__sub}&#13;&#10;Element: '&lt;span class=&quot;input__sub&quot;&gt;Неверный формат&lt;/span&gt;'&#13;&#10;Actual value: text=&quot;Неверный формат&quot;&#13;&#10;Screenshot: file:/D:/FOR%20JAVA%20D/Netology%20diploma%20QA/AQADiplomaProject/build/reports/tests/1741116879433.0.png&#13;&#10;Page source: file:/D:/FOR%20JAVA%20D/Netology%20diploma%20QA/AQADiplomaProject/build/reports/tests/1741116879433.0.html&#13;&#10;Timeout: 15 s." type="com.codeborne.selenide.ex.ElementShould">Element should have text &quot;Поле обязательно для заполнения&quot; {.input__sub}
-Element: '&lt;span class=&quot;input__sub&quot;&gt;Неверный формат&lt;/span&gt;'
-Actual value: text=&quot;Неверный формат&quot;
-Screenshot: file:/D:/FOR%20JAVA%20D/Netology%20diploma%20QA/AQADiplomaProject/build/reports/tests/1741116879433.0.png
-Page source: file:/D:/FOR%20JAVA%20D/Netology%20diploma%20QA/AQADiplomaProject/build/reports/tests/1741116879433.0.html
-Timeout: 15 s.
-	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
-	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
-	at app//com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
-	at app//com.codeborne.selenide.commands.Should.execute(Should.java:30)
-	at app//com.codeborne.selenide.commands.Should.execute(Should.java:14)
-	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:165)
-	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
-	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
-	at app//com.sun.proxy.$Proxy19.shouldHave(Unknown Source)
-	at app//ru.netology.page.PaymentPage.verifyEmptyFieldPay(PaymentPage.java:79)
-	at app//ru.netology.test.PaymentTest.emptyYearPayTest(PaymentTest.java:172)
-	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
-	at java.base@11.0.13/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at java.base@11.0.13/java.util.ArrayList.forEach(ArrayList.java:1541)
-</failure>
-  </testcase>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[мар. 04, 2025 11:34:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 133
-мар. 04, 2025 11:34:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 133.0.6943.142. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.13.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  <testcase name="1.1. Успешная покупка." classname="ru.netology.test.PaymentTest" time="7.049"/>
+  <system-out><![CDATA[Data deleted in Data Base tables...
+]]></system-out>
+  <system-err><![CDATA[мар. 07, 2025 1:50:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 134
+мар. 07, 2025 1:50:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 134.0.6998.35. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.13.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>

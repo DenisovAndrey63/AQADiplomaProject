@@ -26,7 +26,7 @@ public class DataGenerator {
         return declinedCardNumber;
     }
 
-    public static  String getOtherBankCardNumber() {
+    public static String getOtherBankCardNumber() {
         return otherBankCardNumber;
     }
 
@@ -65,15 +65,15 @@ public class DataGenerator {
 
     //Карты для API тестов.
     public static CardData getApprovedCard() {
-        return new CardData("4444 4444 4444 4441", "09", "24", generateCardOwnerName(), getRandomCVC());
+        return new CardData("4444 4444 4444 4441", "09", "26", generateCardOwnerName(), getRandomCVC());
     }
 
     public static CardData getDeclinedCard() {
-        return new CardData("4444 4444 4444 4442", "09", "24", generateCardOwnerName(), getRandomCVC());
+        return new CardData("4444 4444 4444 4442", "09", "26", generateCardOwnerName(), getRandomCVC());
     }
 
     public static CardData getOtherCard() {
-        return new CardData("3467 5437 3589 1589", "09", "24", generateCardOwnerName(), getRandomCVC());
+        return new CardData("3467 5437 3589 1589", "09", "26", generateCardOwnerName(), getRandomCVC());
     }
 
 }
